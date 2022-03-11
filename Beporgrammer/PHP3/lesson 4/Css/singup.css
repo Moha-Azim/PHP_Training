@@ -1,0 +1,141 @@
+body {
+  background-color: #ecf0f3;
+}
+
+.page {
+  width: 60%;
+  height: 700px;
+  background-color: #ecf0f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px 0px #c8cbd1, -4px -4px 10px 0px rgb(255, 255, 255);
+  display: flex;
+}
+
+/* Start   sing in  page 
+
+
+
+*/
+
+.page .singin {
+  width: 40%;
+  height: 100%;
+  border-right: 1px solid #c8cbd1;
+  position: relative;
+}
+.page .singup img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.page .singin .des {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page .singin .des .largeP {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.page .singin .des .mediumP {
+  font-size: 20px;
+  color: #a4a9ac;
+}
+
+.page .singin .des a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #4b70e2;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 12px;
+  letter-spacing: 2px;
+}
+/* End  sing in  page 
+
+
+*/
+
+/* Start  sing up  page 
+
+
+*/
+.page .singup {
+  width: 60%;
+  height: 100%;
+  border-right: 1px solid #c8cbd1;
+  position: relative;
+}
+
+.page .singup .des {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.page .singup .des .largeP {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.page .singup .des .mediumP {
+  font-size: 20px;
+  color: #a4a9ac;
+}
+
+.page .singup .des .icons i {
+  font-size: 35px;
+  margin-left: 25px;
+  color: #a4a9ac;
+}
+.page .singup .des .icons i:hover {
+  color: rgb(106, 219, 219);
+}
+
+.page .singup .des form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page .singup .des form input {
+  margin-top: 5px;
+  width: 300px;
+  height: 25px;
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: inset 1px 1px 1px 1px #a4a9ac;
+}
+.page .singup .des form input:focus {
+  outline: none;
+}
+.page .singup .des form .link {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #4b70e2;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 25px;
+  box-shadow: none;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  padding-bottom: 40px;
+}

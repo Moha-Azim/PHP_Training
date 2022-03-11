@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/singup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="singin">
+        <div class="des">
+          <p class="largeP">Welcom Back !</p>
+          <p class="mediumP">
+            To keep conected with us pleas blur login with your personal info
+          </p>
+          <a class="loginLink" href="singin.html">SING IN</a>
+        </div>
+      </div>
+      <div class="singup">
+        <div class="des">
+          <p class="largeP">Creat Account</p>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <p class="mediumP">or use email for regestration</p>
+
+          <form action="insert.php" method="POST">
+            <input type="text" placeholder="Name" name="Name" />
+            <input type="email" placeholder="Email" name="Email" />
+            <input type="password" placeholder="Password" name="Password" />
+
+            <input class="link" type="submit" value="Singup" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

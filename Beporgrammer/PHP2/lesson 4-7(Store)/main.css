@@ -1,0 +1,45 @@
+body {
+  background-color: #1a1a1a;
+}
+
+h2 {
+  color: #f9fbff;
+  font-weight: bolder;
+}
+
+form {
+  background-color: white;
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -20px;
+  left: 100px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f9fbff transparent;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #d8d6d6;
+  font-size: 20px;
+}
+
+form .error {
+  color: red;
+  font-size: 30px;
+}
+
+form .done {
+  color: green;
+  font-size: 30px;
+}
