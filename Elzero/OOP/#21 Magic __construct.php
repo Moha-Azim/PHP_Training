@@ -21,7 +21,7 @@ class makedevice
     {
         $this->name = $na;
         $this->ram = $ra;
-        echo 'hello ' . $na . 'your device have a ' . $ra . ' RAM <br> <br>';
+        echo 'hello ' . $na . ' your device have a ' . $ra . ' RAM <br> <br>';
     }
 }
 

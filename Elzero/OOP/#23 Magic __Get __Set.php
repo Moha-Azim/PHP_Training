@@ -56,7 +56,6 @@ $you = new hicl();
 $you->priv = "mnonono";
 $you->nothere = "i shuld not be here";
 
-
 echo '<pre>';
 print_r($you);
 echo '</pre>';

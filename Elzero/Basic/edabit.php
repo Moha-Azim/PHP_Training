@@ -2,16 +2,42 @@
 
 
 
+// function fib($n)
+// {
+
+//   $x1 = 0;
+//   $x2 = 1;
+//   $x3 = 0;
+//   for ($i = 1; $i < $n; $i++) {
+
+//     $x3 = $x2 + $x1;
+//     $x1 = $x2;
+//     $x2 = $x3;
+//   }
+//   return $x3;
+// }
+
+// echo fib(1);
 
 
+// function splitArray2(array $arr)
+// {
 
+//   $counter = 0;
+//   for ($i = count($arr) - 1; $i >= 1; $i--) {
+//     $sarr = $arr;
+//     $yarr = $arr;
+//     $x = array_sum(array_slice($sarr, 0, $i));
+//     $y = array_sum(array_slice($yarr, $i));
 
+//     if ($x >=  $y) {
+//       $counter++;
+//     }
+//   }
+//   return $counter;
+// }
 
-
-
-
-
-
+// echo  splitArray2([10, 1, 1, 10]);
 
 
 /*
@@ -34,7 +60,22 @@
 
 
           $AllArr = [[1, 1],[1,2,1],[1,3,3,1]];
+
           
+
+
+
+4
+fib 3       +      fib 2 
+
+fib 2+ fib 1 + fib 1 + fib 0
+
+fib 1 + fib 0 +1 + 1
+
+
+
+
+
 */
 
 

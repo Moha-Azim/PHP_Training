@@ -8,13 +8,12 @@
     - Have Methods Without Body code
 
 
-        intervface ==> to create an interface
+        interface ==> to create an interface
         implements ==> to make class refer to interface
 */
 
 interface DBconnection
 {
-
     public function getUsersName();
     public function getPhonesNum();            // YOU HAVE three types of data bases and you can change between them any time
     public function getUsersEmail();

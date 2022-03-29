@@ -223,6 +223,59 @@
 
 
 
+function getMaximumGreyness($pixels)
+{
+
+    $sum_first_1 =  str_split($pixels[0]);
+    $sum_first_1 = array_sum($sum_first_1);
+
+    $sum_first_0 = strlen($pixels[0]) - $sum_first_1;
+
+    $ool_1 = 0;
+    $ool_0 = 0;
+
+    $ll_1 = 0;
+    $ll_0 = 0;
+    foreach ($pixels as $pix) {
+
+        if ($pix[0] == 1) {
+            $ool_1 += $pix[0];
+        } elseif ($pix[0] == 0) {
+            $ool_0 += 1;
+        } else {
+            break;
+        }
+
+        if ($pix[strlen($pixels[0]) - 1] == 1) {
+            $ll_1 +=  $pix[strlen($pixels[0]) - 1];
+        } elseif ($pix[strlen($pixels[0]) - 1] == 0) {
+            $ll_0 += 1;
+        } else {
+            break;
+        }
+    }
+
+    $gray4_1 = ($sum_first_1 +  $ool_1) - ($ool_0 + $sum_first_0);
+
+    $gray4_L = ($sum_first_1 +   $ll_1) - ($ll_0  + $sum_first_0);
+
+    if ($gray4_1 >=  $gray4_L) {
+        $laste = $gray4_1;
+    } else {
+        $laste = $gray4_L;
+    }
+
+    return   $laste;
+}
+
+echo getMaximumGreyness(["100001", "000001", "100010"]);
+
+// if ($firts < $last) {
+//     $theBigest = $last;
+// } else {
+//     $theBigest = $firts;
+// }
+
 // function findMinimumCharacters($searchWord, $resultWord)
 // {
 
@@ -252,6 +305,8 @@
 
 
 // print_r(findMinimumCharacters("anmaz", "amazon"));
+
+
 
 
 
